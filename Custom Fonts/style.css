@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "HOnk";
+  src: url("fonts/Honk-Regular-VariableFont_MORF\,SHLN.ttf");
+}
+
+h2 {
+  font-family: "Honk";
+  font-size: 40px;
+}
