@@ -1,9 +1,14 @@
 .parent {
   background-color: #fbecec;
   padding: 50px;
-  color: #440047;
+  color: #474600;
 }
 
 h2 {
   color: #e11d74;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/Oswald-Regular.ttf");
 }
