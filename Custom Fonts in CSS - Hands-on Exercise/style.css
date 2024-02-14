@@ -1,3 +1,6 @@
+@import url(./custom-fonts.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 .parent {
   background-color: #fbecec;
   padding: 50px;
@@ -5,10 +8,11 @@
 }
 
 h2 {
+  font-family: "Honk", monospace, sans-serif;
   color: #e11d74;
+  font-size: 35px;
 }
 
-@font-face {
-  font-family: "Oswald";
-  src: url("fonts/Oswald-Regular.ttf");
+p {
+  font-family: "Protest Riot";
 }
