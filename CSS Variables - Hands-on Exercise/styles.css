@@ -16,11 +16,15 @@
 }
 
 .solar-system {
+  color: var(--solar-system-text);
+  background-color: var(--solar-system-bg);
   padding: 10px;
   margin-top: 20px;
 }
 
 .planets {
+  color: var(--planets-text);
+  background-color: var(--planets-bg);
   padding: 10px;
   margin-top: 20px;
 }
