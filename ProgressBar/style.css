@@ -1,0 +1,26 @@
+body {
+  margin: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-family: sans-serif;
+}
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(138, 133, 133, 0.288);
+}
+progress[value]::-webkit-progress-value {
+  background-color: rgb(55, 230, 11);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
