@@ -12,6 +12,16 @@
   float: left;
   background-color: #91d18b;
   opacity: 0.5;
+
+  transition: background-color 200ms ease-in, opacity 200ms ease-in,
+    transform 0.2s ease-in;
+}
+
+.box:hover {
+  background-color: #fddb3a;
+  opacity: 1;
+  /* transform: scale(0.75); */
+  /* transform: rotate(60deg); */
 }
 
 .box img {
