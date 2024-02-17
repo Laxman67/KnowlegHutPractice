@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  background-color: #e2e2e2;
+  padding: 10px;
+  display: grid;
+  height: 100vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+
+  grid-template-areas:
+    "header header header header"
+    "sidebar content content content "
+    "footer footer footer footer ";
+}
+
+.item {
+  background-color: tomato;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: content;
+  background-image: url(https://th.bing.com/th?id=OIP.yfgqKwLc1YioJiv3peKtpgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+  background-size: cover;
+}
+
+.item-3 {
+  grid-area: sidebar;
+  background-image: url(https://th.bing.com/th?id=OIP.ibDq5eWBw8TEybrdL9P4fgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+  background-size: cover;
+  background-position: center center;
+}
+
+.item-4 {
+  grid-area: footer;
+  background-image: url(https://imgs.search.brave.com/n3ufgMNDgX9iNsemk2OeP9bA1RsclRJthCZ5AS5XnoU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGV4ZXJ0by5jb20v/Y2RuLWNnaS9pbWFn/ZS93aWR0aD0zODQw/LHF1YWxpdHk9NzUs/Zm9ybWF0PWF1dG8v/aHR0cHM6Ly9lZGl0/b3JzLmRleGVydG8u/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA4LzA4L1Zh/bmd1YXJkLTEwMjR4/NTczLmpwZw);
+  background-size: cover;
+}
