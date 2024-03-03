@@ -12,7 +12,7 @@
         "pine-apple",
       ];
 
-      let removedDuplicates = (arr) => {
+      let uniqueFruits = (arr) => {
         let newArr = [];
         arr.forEach((element) => {
           if (!newArr.includes(element)) {
@@ -23,7 +23,7 @@
         return newArr;
       };
 
-      console.log(removedDuplicates(fruits));
+      console.log(uniqueFruits(fruits));
     }
   }
 }
