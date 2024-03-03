@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery App</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1375/1375106.png" type="image/x-icon">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h2 {
+            color: blueviolet;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 250px);
+            gap: 10px;
+        }
+
+        .grid-container div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-position: center;
+            transition: all .25s ease-in-out;
+
+        }
+
+        .grid-container div {
+            overflow: hidden;
+        }
+
+        .grid-container div img:hover {
+            filter: brightness(50%);
+
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Photo Gallery App</h2>
+    <div class="grid-container">
+
+
+        <div><img src="https://picsum.photos/id/243/300/300" alt="" srcset="" title="Yes its a Image"></div>
+        <div><img src="https://picsum.photos/id/541/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/851/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/546/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/941/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/481/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/721/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/234/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/157/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/157/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/243/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/514/300/300" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/714/300/300" alt="" srcset=""></div>
+
+
+
+    </div>
+
+</body>
+
+</html>
