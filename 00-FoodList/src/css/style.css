@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#headerTitle {
+  text-align: center;
+  margin: 20px;
+  color: rgb(10, 10, 93);
+}
+
+#headerBar {
+  width: 10%;
+  border-top: 2px solid goldenrod;
+  margin: 0 auto;
+}
+
+#allButtons {
+  text-align: center;
+  margin: 20px;
+}
+
+.categoryButton {
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 3px solid rgba(95, 92, 92, 0.6);
+}
+.categoryButton:hover {
+  cursor: pointer;
+  border: 3px solid rgb(10, 10, 93);
+}
+
+#allDishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: centere;
+  gap: 5%;
+}
+
+.dish {
+  justify-content: space-around;
+  /* align-items: center; */
+
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  width: 40%;
+}
+.dishName {
+  text-transform: capitalize;
+}
+.dishInner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px dotted rgb(4, 13, 64);
+}
+.dish img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(95, 92, 92, 0.6);
+}
+
+.dishPrice {
+  color: rgb(252, 209, 19);
+}
