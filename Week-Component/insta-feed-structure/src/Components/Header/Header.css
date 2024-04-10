@@ -1,0 +1,50 @@
+nav {
+  min-width: 100vw;
+  background-color: beige;
+  padding: 0 200px;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  gap: 15px;
+}
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  gap: 5px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+ul li:hover {
+  transform: scale(1.09);
+}
+
+.logout {
+  color: white;
+  background-color: rgb(63, 156, 214);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.nav-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-btn img {
+  mix-blend-mode: multiply;
+  width: 200px;
+  border: 0px transparent;
+  outline: 0px none;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+
+.menu-icon {
+  font-size: 20px;
+}
