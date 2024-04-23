@@ -50,14 +50,14 @@
       addBook: function (book) {
         this.book.push(book);
         console.log(
-          `Book \"${book.title}\" added successfully with ID:${book.id} !`
+          `Book \"${book.title}\" added successfully with ID:${book.id} !`,
         );
       },
 
       // 2. Removing a Book
       removeBook: function (removeID) {
         let bookToBeRemove = this.book.findIndex(
-          (book) => book.id === removeID
+          (book) => book.id === removeID,
         );
 
         if (bookToBeRemove == -1) {
@@ -66,7 +66,7 @@
           let removeBook = this.book.splice(bookToBeRemove, 1);
 
           console.log(
-            `The book ${removeBook[0].title} is removed from the collection`
+            `The book ${removeBook[0].title} is removed from the collection`,
           );
         }
       },
@@ -74,7 +74,7 @@
       // 3. Search a Book
       searchBook: function (title) {
         let filteredBooks = this.book.filter((book) =>
-          book.title.includes(title)
+          book.title.includes(title),
         );
 
         if (filteredBooks.length == 0) {
@@ -82,8 +82,8 @@
         } else {
           filteredBooks.forEach((book) =>
             console.log(
-              `FOUND: ${book.title} released in ${book.year} written by ${book.author}`
-            )
+              `FOUND: ${book.title} released in ${book.year} written by ${book.author}`,
+            ),
           );
         }
       },
@@ -119,12 +119,12 @@
         let noOfRatings = book.rating.length;
         let totalRating = book.rating.reduce(
           (accumulator, currentValue) => accumulator + currentValue,
-          0
+          0,
         );
 
         let averageRating = totalRating / noOfRatings;
         console.log(
-          `The average rating  for ${book.title} by ${book.author} is ${averageRating}`
+          `The average rating  for ${book.title} by ${book.author} is ${averageRating}`,
         );
       },
     };
@@ -132,7 +132,7 @@
     let choice = -1;
     do {
       console.log(
-        `Choose an Option \n1. Add a Book \n2. Remove a Book \n3. Search for a Book \n4. Add a Rating  \n5. Add a Review \n6. Computer avarage of rating\n7. Exit `
+        `Choose an Option \n1. Add a Book \n2. Remove a Book \n3. Search for a Book \n4. Add a Rating  \n5. Add a Review \n6. Computer avarage of rating\n7. Exit `,
       );
 
       choice = parseInt(prompt("Enter your choice"));
@@ -167,7 +167,7 @@
           break;
         case 6:
           let averageID = prompt(
-            "Enter the ID of book you want to see average"
+            "Enter the ID of book you want to see average",
           );
 
           BookCollection.calculateAverageRating(averageID);

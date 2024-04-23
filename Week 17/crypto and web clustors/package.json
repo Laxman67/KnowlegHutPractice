@@ -1,0 +1,13 @@
+{
+  "name": "crypto and web clustors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"type": "module",
+  "scripts": {
+    "start": "nodemon clustors.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
